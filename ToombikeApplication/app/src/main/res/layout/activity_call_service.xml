@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:weightSum="7"
+    android:orientation="vertical"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        tools:context=".CallService" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtView1"
+        android:visibility="gone"
+        >
+        <EditText
+            android:id="@+id/inputSearchEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ใส่ชื่อสถานที่ ที่ต้องการค้นหา"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/pinLocationEdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปักหมุด"
+            android:background="#004cb5"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edtView2"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ที่อยู่ : "
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newPinLocationEdt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/edtService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fca110"
+                android:text="แก้ไขข้อมูลที่อยู่"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_weight="1"
+
+                />
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resetEditMap"
+                android:text="รีเซ็ท"
+                android:background="#7c00e8"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="5dp"
+                />
+            <Button
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/saveEdtService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="บันทึก"
+                android:background="#027000"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/cancelService"
+                style="@style/RedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FF0000"
+                android:text="ยกเลิกการแจ้งซ่อม"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

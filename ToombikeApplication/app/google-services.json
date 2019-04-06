@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366891943439",
+    "firebase_url": "https://toombike-41fdf.firebaseio.com",
+    "project_id": "toombike-41fdf",
+    "storage_bucket": "toombike-41fdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366891943439:android:98c007da64d38979",
+        "android_client_info": {
+          "package_name": "com.example.tanika.toombikeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366891943439-bnvljvivfflscq9vemhto4ut681p5tas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tanika.toombikeapplication",
+            "certificate_hash": "4c79a746064e3caaa0831b94535061d6c05fcbc6"
+          }
+        },
+        {
+          "client_id": "366891943439-vosfkiqt0j3jhhth8k5qc43mo7vkp3pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCpkOSnmJXwq8z9JX4lDGvaYQ0gJIGYU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366891943439-vosfkiqt0j3jhhth8k5qc43mo7vkp3pj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
